@@ -1,0 +1,78 @@
+{
+  "iva_porcentaje": 21,
+  "categorias": [
+    {
+      "id": "cat_base",
+      "titulo": "1. Estructura y Módulos",
+      "parametros": [
+        {
+          "id": "modelo_base",
+          "nombre": "fula",
+          "tipo": "texto",
+          "opciones": [
+            {
+              "label": "1 Módulo (30 m²) - Estudio",
+              "precio": 22000
+            },
+            {
+              "label": "2 Módulos (60 m²) - 2 Hab",
+              "precio": 38000
+            },
+            {
+              "label": "3 Módulos (90 m²) - 3 Hab",
+              "precio": 54000
+            }
+          ],
+          "placeholder": "Ej. Escriba afulanoquí..."
+        },
+        {
+          "id": "margen_gestion",
+          "nombre": "Comisión o Gastos de Gestión (%)",
+          "tipo": "porcentaje",
+          "porcentaje_fijo": 5,
+          "valor_por_defecto": 5
+        }
+      ]
+    },
+    {
+      "id": "cat_acabados",
+      "titulo": "2. Acabados y Calidad",
+      "parametros": [
+        {
+          "id": "nivel_aislamiento",
+          "nombre": "Nivel de Aislamiento Térmico",
+          "tipo": "multiselect_advanced",
+          "min": 1,
+          "max": 5,
+          "precio_paso": 800,
+          "valor_por_defecto": 3,
+          "opciones": [
+            {
+              "label": "Opción 1",
+              "precio": 1000
+            }
+          ]
+        },
+        {
+          "id": "extras_multiselect_adv",
+          "nombre": "Paquetes Confort (Múltiple Avanzada)",
+          "tipo": "multiselect_advanced",
+          "opciones": [
+            {
+              "label": "Persianas Motorizadas",
+              "precio": 1200
+            },
+            {
+              "label": "Suelo Radiante",
+              "precio": 3500
+            },
+            {
+              "label": "Aerotermia",
+              "precio": 4800
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
